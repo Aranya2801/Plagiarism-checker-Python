@@ -453,6 +453,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 </div>
 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Aranya2801/Plagiarism-checker-Python&type=Date)](https://star-history.com/#Aranya2801/Plagiarism-checker-Python&Date)
-
-</div>
