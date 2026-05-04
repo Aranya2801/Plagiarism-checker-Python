@@ -1,0 +1,57 @@
+name: 🧪 CI — Plagiarism Checker Pro
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test on Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: 🧪 Run tests with coverage
+        run: |
+          pytest tests/ -v --tb=short --cov=plagiarism_checker --cov-report=term-missing
+
+      - name: ✅ Smoke test CLI
+        run: |
+          python main.py --help
+          python -c "
+          from plagiarism_checker.utils import create_sample_documents
+          create_sample_documents('./samples')
+          "
+          python main.py -d ./samples --no-progress
+
+  lint:
+    name: 🔍 Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install flake8
+      - name: Run flake8
+        run: flake8 plagiarism_checker/ --max-line-length=100 --ignore=E501,W503
+        continue-on-error: true

@@ -1,0 +1,22 @@
+# ╔══════════════════════════════════════════════╗
+# ║   Plagiarism Checker Pro — Dependencies     ║
+# ╚══════════════════════════════════════════════╝
+
+# Core ML & NLP
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Optional: PDF extraction
+# PyMuPDF>=1.23.0        # pip install PyMuPDF  (fastest)
+# pdfplumber>=0.9.0      # pip install pdfplumber
+# pypdf>=3.0.0           # pip install pypdf
+
+# Optional: Streamlit web UI
+# streamlit>=1.28.0
+
+# Optional: NLTK for advanced preprocessing
+# nltk>=3.8.0
+
+# Dev / Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
