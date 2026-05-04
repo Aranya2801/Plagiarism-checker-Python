@@ -3,9 +3,9 @@
 <!-- Animated Header Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Plagiarism%20Checker%20Pro&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=AI-Powered%20Document%20Similarity%20Engine&descAlignY=60&descSize=18" width="100%"/>
 
-<!-- Typing Animation -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&multiline=true&width=800&height=100&lines=🔍+Detect+Plagiarism+with+AI+Precision;📊+TF-IDF+%7C+Cosine+Similarity+%7C+N-gram+%7C+LSH;⚡+Fast+%7C+Accurate+%7C+Beautiful+Reports" alt="Typing SVG" />
+<!-- Typing Animation — three rotating lines, no emojis (SVG fonts don't support them) -->
+<a href="https://readme-typing-svg.demolab.com/demo/">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&repeat=true&width=750&height=60&lines=Detect+Plagiarism+with+AI+Precision;TF-IDF+%7C+Cosine+%7C+N-gram+%7C+MinHash+%7C+LSH;Fast+%7C+Accurate+%7C+Beautiful+Reports" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -447,6 +447,11 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
 
 **⭐ Star this repo if it helped you!**
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Aranya2801/Plagiarism-checker-Python&type=Date)](https://star-history.com/#Aranya2801/Plagiarism-checker-Python&Date)
+
+</div>
+
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Aranya2801/Plagiarism-checker-Python&type=Date)](https://star-history.com/#Aranya2801/Plagiarism-checker-Python&Date)
 
