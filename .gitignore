@@ -14,7 +14,7 @@ report.html
 report.json
 
 # the corpus isn't redistributed here, download it (see experiments/README.md)
-data/
+/data/
 
 .vscode/
 .idea/

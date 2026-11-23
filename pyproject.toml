@@ -9,7 +9,7 @@ description = "Text reuse detection with containment, LCS, winnowing fingerprint
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Aranya Ghosh" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = ["numpy>=1.21"]
 keywords = ["plagiarism", "text reuse", "winnowing", "minhash", "nlp"]
 classifiers = [

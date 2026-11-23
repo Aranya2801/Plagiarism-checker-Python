@@ -12,7 +12,7 @@ Everything is evaluated on the [Clough & Stevenson (2011)](https://doi.org/10.10
 
 ## Quick start
 
-Python 3.9+. These commands work the same in PowerShell, cmd and bash.
+Python 3.10+. These commands work the same in PowerShell, cmd and bash.
 
 ```
 git clone https://github.com/Aranya2801/Plagiarism-checker-Python.git
