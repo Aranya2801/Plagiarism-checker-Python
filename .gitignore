@@ -1,41 +1,22 @@
-# Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-*.egg
 *.egg-info/
-dist/
 build/
-.eggs/
-.Python
-env/
-venv/
+dist/
 .venv/
-ENV/
-
-# Testing
+venv/
 .pytest_cache/
 .coverage
 htmlcov/
-*.cover
 
-# Reports (generated output — don't commit)
-reports/
-*.html
-*.json
-!package.json
+# generated reports
+report.html
+report.json
 
-# Editors
+# the corpus isn't redistributed here, download it (see experiments/README.md)
+data/
+
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Misc
-*.log
-*.tmp

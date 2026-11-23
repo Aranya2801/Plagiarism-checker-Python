@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plagiarism-checker"
+version = "3.0.0"
+description = "Text reuse detection with containment, LCS, winnowing fingerprints and MinHash LSH"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aranya Ghosh" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+keywords = ["plagiarism", "text reuse", "winnowing", "minhash", "nlp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.optional-dependencies]
+pdf = ["pymupdf>=1.23"]
+docx = ["python-docx>=1.0"]
+semantic = ["sentence-transformers>=2.2"]
+experiments = ["scikit-learn>=1.0", "matplotlib>=3.5"]
+dev = ["pytest>=7", "scikit-learn>=1.0"]
+
+[project.scripts]
+plagcheck = "plagiarism_checker.cli:main"
+
+[project.urls]
+Source = "https://github.com/Aranya2801/Plagiarism-checker-Python"
+
+[tool.setuptools]
+packages = ["plagiarism_checker"]
+
+[tool.setuptools.package-data]
+plagiarism_checker = ["data/model.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
